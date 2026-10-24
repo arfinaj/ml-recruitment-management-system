@@ -1,4 +1,4 @@
-Engineering smarter recruitment through full-stack architecture, machine learning, and unified hiring workflows.
+<h1>Engineering smarter recruitment through full-stack architecture, machine learning, and unified hiring workflows.</h1>
 The platform streamlines the placement process by connecting students, recruiters, and Training and Placement Officers (TPOs) through a centralized system for job postings, applications, and placement activities.
 
 Key Features
@@ -61,7 +61,7 @@ npm run build
 If you'd like to collaborate or connect, feel free to reach out!
 
 
-Tech Stack
+<h2>Tech Stack</h2>
 
 Frontend: React.js, Tailwind CSS
 
@@ -75,7 +75,7 @@ ML API: FastAPI
 
 For the ML resume analysis service, install the Python dependencies and start the FastAPI server separately, following the project setup instructions.
 
-Future Enhancements
+<h2>Future Enhancements</h2>
 
 Resume builder and document upload
 
