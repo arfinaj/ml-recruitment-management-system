@@ -13,13 +13,15 @@ Application Tracking: Manage and track student job applications.
 
 Centralized Placement Workflow: Facilitates coordination between students and placement stakeholders.
 
-<img width="1903" height="942" alt="image" src="https://github.com/user-attachments/assets/e1a88b5d-ed51-4cb4-9262-21ace7c4f9d4" />
+<img width="1901" height="932" alt="image" src="https://github.com/user-attachments/assets/fe1e0468-845c-4389-b59c-7920e0bdeb72" />
 
 
 
-<img width="1917" height="907" alt="image" src="https://github.com/user-attachments/assets/c2c678c8-f764-425d-b681-f220dfce589a" />
+<img width="1900" height="935" alt="image" src="https://github.com/user-attachments/assets/890a3bae-7a3b-4fd9-a186-fbc07e4767ff" />
 
-<img width="1919" height="941" alt="image" src="https://github.com/user-attachments/assets/bc80ccc4-c74b-45bd-86d8-d929f7d83bcb" />
+
+<img width="1907" height="934" alt="image" src="https://github.com/user-attachments/assets/304bac7d-7516-492b-abfc-f79dd014acc0" />
+
 
 
 
