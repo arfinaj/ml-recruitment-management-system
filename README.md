@@ -71,7 +71,7 @@ npm run build
 
 
 
-<h2>Tech Stack</h2>
+<h3>Tech Stack</h3>
 
 Frontend: React.js, Tailwind CSS
 
@@ -84,5 +84,7 @@ Machine Learning: Python, scikit-learn, TF-IDF, Logistic Regression
 ML API: FastAPI
 
 For the ML resume analysis service, install the Python dependencies and start the FastAPI server separately, following the project setup instructions.
+
+---------------------------------------------------------------------------------------
 
 <em>Beyond the usual coursework, this was my final year engineering project.</em>
