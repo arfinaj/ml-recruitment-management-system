@@ -87,12 +87,4 @@ ML API: FastAPI
 
 For the ML resume analysis service, install the Python dependencies and start the FastAPI server separately, following the project setup instructions.
 
-<h2>Future Enhancements</h2>
-
-Resume builder and document upload
-
-Faculty recommendation system
-
-WhatsApp notifications
-
-Placement analytics and reporting
+<h5><em>Beyond the usual coursework, this was my final year engineering project.</em></h5>
