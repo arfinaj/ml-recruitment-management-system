@@ -38,9 +38,8 @@ Centralized Placement Workflow: Facilitates coordination between students and pl
 
 
 
-## 🚀 Getting Started
 
-Clone the repository:
+<h4>Clone the repository:</h4>
 
 ```bash
 git clone https://github.com/arfinaj/placesync.git
@@ -70,7 +69,6 @@ Build for production:
 npm run build
 ```
 
-If you'd like to collaborate or connect, feel free to reach out!
 
 
 <h2>Tech Stack</h2>
@@ -87,4 +85,4 @@ ML API: FastAPI
 
 For the ML resume analysis service, install the Python dependencies and start the FastAPI server separately, following the project setup instructions.
 
-<h5><em>Beyond the usual coursework, this was my final year engineering project.</em></h5>
+<em>Beyond the usual coursework, this was my final year engineering project.</em>
