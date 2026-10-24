@@ -1,10 +1,17 @@
-PlaceSync - A Placement Management System
+Engineering smarter recruitment through full-stack architecture, machine learning, and unified hiring workflows.
+The platform streamlines the placement process by connecting students, recruiters, and Training and Placement Officers (TPOs) through a centralized system for job postings, applications, and placement activities.
 
-An AI-powered Placement Management System built using the MERN Stack.
+Key Features
 
-Overview
+Role-Based Portals: Dedicated interfaces for students, recruiters, and placement officers.
 
-This project is designed to streamline the campus placement process by providing a centralized platform for Students, Recruiters, and Placement Officers (TPOs).
+ML-Based Resume Analysis: Uses TF-IDF vectorization and Logistic Regression to classify resume–job description relevance.
+
+Job Management: Browse job opportunities and manage recruitment-related information.
+
+Application Tracking: Manage and track student job applications.
+
+Centralized Placement Workflow: Facilitates coordination between students and placement stakeholders.
 
 <img width="1901" height="902" alt="image" src="https://github.com/user-attachments/assets/2abe9953-5a30-4502-8abd-acaae352865d" />
 
@@ -50,22 +57,26 @@ npm run build
 If you'd like to collaborate or connect, feel free to reach out!
 
 
-#Tech Stack
+Tech Stack
 
-- MongoDB
-- Express.js
-- React.js
-- Node.js
-- Tailwind CSS
+Frontend: React.js, Tailwind CSS
 
-## Planned Features
+Backend: Node.js, Express.js
 
-- Student Portal
-- Recruiter Portal
-- Placement Officer Dashboard
-- Resume Builder
-- AI Resume Analysis
-- Job Applications
-- Faculty Recommendation System
-- WhatsApp Notifications
-- Placement Analytics
+Database: MongoDB
+
+Machine Learning: Python, scikit-learn, TF-IDF, Logistic Regression
+
+ML API: FastAPI
+
+For the ML resume analysis service, install the Python dependencies and start the FastAPI server separately, following the project setup instructions.
+
+Future Enhancements
+
+Resume builder and document upload
+
+Faculty recommendation system
+
+WhatsApp notifications
+
+Placement analytics and reporting
