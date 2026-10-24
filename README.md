@@ -1,4 +1,4 @@
-<h1>Engineering smarter recruitment through full-stack architecture, machine learning, and unified hiring workflows.</h1>
+<h2>Engineering smarter recruitment through full-stack architecture, machine learning, and unified hiring workflows.</h2>
 The platform streamlines the placement process by connecting students, recruiters, and Training and Placement Officers (TPOs) through a centralized system for job postings, applications, and placement activities.
 
 Key Features
