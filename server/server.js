@@ -8,6 +8,7 @@ import connectDB from "./config/db.js";
 import jobRoutes from "./routes/jobRoutes.js";
 import applicationRoutes from "./routes/applicationRoutes.js";
 import interviewRoutes from "./routes/interviewRoutes.js";
+import resumeRoutes from "./routes/resumeRoutes.js";
 
 dotenv.config();
 
@@ -23,7 +24,7 @@ app.use("/api/users", userRoutes);
 app.use("/api/jobs", jobRoutes);
 app.use("/api/applications", applicationRoutes);
 app.use("/api/interviews", interviewRoutes);
-
+app.use("/api/resumes", resumeRoutes);
 
 app.get("/", (req, res) => {
   res.send("🚀 PlaceSync Backend Running");

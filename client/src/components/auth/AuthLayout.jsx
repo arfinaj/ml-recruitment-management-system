@@ -6,7 +6,7 @@ function AuthLayout({children}){
                 {/*Left Panel*/}
 
                 <div className="hidden w-1/2 flex-col justify-center px-16 lg:flex">
-                <h1 className="text-5xl font-bold">Place <span className="text-violet-500">Sync</span></h1>
+                <h1 className="text-5xl font-bold">Place<span className="text-blue-500">Sync</span></h1>
 
                 <p className="mt-6 text-xl text-gray-400">
                     Smart Placement Management System 

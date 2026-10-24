@@ -83,6 +83,7 @@ function MyJobs() {
 
           {/* Active */}
           <button
+          onClick={()=> navigate("recruiter/my-jobs")}
             className="w-full rounded-lg bg-blue-600 px-4 py-3 text-left"
           >
             My Jobs
@@ -95,6 +96,13 @@ function MyJobs() {
             Interviews
           </button>
 
+        <button
+          onClick={()=> navigate("/recruiter/createjob")}
+           className="w-full rounded-lg px-4 py-3 text-left text-slate-400 hover:bg-slate-800 hover:text-white"
+          >
+            Post Jobs
+
+          </button>
           <button
             className="w-full rounded-lg px-4 py-3 text-left text-slate-400 hover:bg-slate-800 hover:text-white"
           >

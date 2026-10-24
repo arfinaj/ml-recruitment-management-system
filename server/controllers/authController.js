@@ -3,7 +3,10 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import validator from "validator";
 
+
+
 export const registerUser = async (req, res) => {
+  const navigate=useNavigate();
   try {
     const { name, email, password, role } = req.body;
 
@@ -57,7 +60,9 @@ export const registerUser = async (req, res) => {
         role: user.role,
       },
       token,
-    });
+    }
+
+  );
   } catch (error) {
     console.log(error);
 

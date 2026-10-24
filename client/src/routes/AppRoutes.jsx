@@ -3,7 +3,7 @@ import Landing from "../pages/Landing/Landing";
 import Login  from "../pages/Auth/Login";
 import Register from "../pages/Auth/Register"; 
 import StudentDashboard from "../pages/Dashboard/StudentDashboard";
-import Jobs from "../pages/Jobs/Jobs";
+// import Jobs from "../pages/Jobs/Jobs";
 import ApplyJob from "../pages/Applications/ApplyJob";
 import Applicants from "../pages/Recruiter/Applicants";
 import ProtectedRoute from "../components/ProtectedRoute";
@@ -12,6 +12,13 @@ import MyJobs from "../pages/Recruiter/MyJobs";
 import EditJob from "../pages/Recruiter/EditJob";
 import Interviews from "../pages/Recruiter/Interviews";
 import ScheduleInterview from "../pages/Recruiter/ScheduleInterview";
+import CreateJob from "../pages/Recruiter/CreateJob";
+import Jobs from "../pages/Dashboard/Jobs";
+import MyApplications from "../pages/Dashboard/Applications";
+import RecruiterProfile from "../pages/Recruiter/Profile";
+import MyProfile from "../pages/Dashboard/Profile";
+import ApplicationDetails from "../pages/Dashboard/ApplicationDetails";
+import StudentResumeAnalysis from "../pages/Dashboard/StudentResumeAnalysis";
 function AppRoutes() {
   return (
     <BrowserRouter>
@@ -25,9 +32,38 @@ function AppRoutes() {
   path="/recruiter/jobs/:jobId/applicants"
   element={<Applicants />}
 />
+<Route
+path='/applications/:applicationId'
+element={<ApplicationDetails/>}
+/>
         <Route
   path="/student/dashboard"
   element={<StudentDashboard />}  
+/>
+<Route
+path="/student/me"
+element={<MyProfile/>}
+/>
+
+
+<Route
+path="/student/my-applications"
+element={<MyApplications/>}
+></Route>
+
+<Route
+path="/recruiter/my"
+element={<RecruiterProfile/>}
+/>
+
+
+<Route
+  path="/student/jobs"
+  element={
+    <ProtectedRoute allowedRole="Student">
+      <Jobs />
+    </ProtectedRoute>
+  }
 />
 
 <Route
@@ -81,9 +117,27 @@ function AppRoutes() {
     </ProtectedRoute>
   }
 />
+
+<Route
+  path="/recruiter/createjob"
+  element={
+    <ProtectedRoute allowedRole="Recruiter">
+      <CreateJob />
+    </ProtectedRoute>
+  }
+/>
+
+<Route
+  path="/student/analyze-resume"
+  element={<StudentResumeAnalysis />}
+/>
       </Routes>
     </BrowserRouter>
+
+    
   );
+
+  
 }
 
 export default AppRoutes;

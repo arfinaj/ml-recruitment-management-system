@@ -1,3 +1,4 @@
+import mongoose from "mongoose";
 import Application from "../models/Application.js";
 import Job from "../models/Job.js";
 
@@ -25,6 +26,47 @@ export const getMyApplications = async (req, res) => {
     });
   }
 };
+
+// when view job is clicked shows the applied data in db
+export const getApplicationById = async (req, res) => {
+  try {
+    const { applicationId } = req.params;
+
+    if (!mongoose.isObjectIdOrHexString(applicationId)) {
+      return res.status(400).json({
+        message: "Invalid application ID",
+      });
+    }
+
+    const application = await Application.findOne({
+      _id: applicationId,
+      student: req.user.id,
+    }).populate(
+      "job",
+      "company title description location jobType salary deadline status eligibility"
+    );
+
+    if (!application) {
+      return res.status(404).json({
+        message: "Application not found",
+      });
+    }
+
+    return res.status(200).json({
+      success: true,
+      application,
+    });
+  } catch (error) {
+    console.error("GET APPLICATION ERROR:", error);
+
+    return res.status(500).json({
+      message: "Internal Server Error",
+      error: error.message,
+    });
+  }
+};
+
+
 
 export const getJobApplications = async (req, res) => {
   try {

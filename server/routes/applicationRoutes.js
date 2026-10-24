@@ -7,6 +7,7 @@ import {
   applyForJob,
   getJobApplications, 
   getMyApplications,
+  getApplicationById
 } from "../controllers/applicationController.js";
 
 const router = express.Router();
@@ -30,6 +31,13 @@ router.get(
   authMiddleware,
   roleMiddleware("Student"),
   getMyApplications
+);
+
+router.get(
+  "/:applicationId",
+  authMiddleware,
+  roleMiddleware("Student"),
+  getApplicationById
 );
 
 export default router;

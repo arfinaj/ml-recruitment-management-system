@@ -83,10 +83,9 @@ export const createJob = async (req, res) => {
       location,
       jobType,
       salary,
-      eligibility: {
-        minCGPA,
-        branches,
-      },
+      minCGPA,
+      branches,
+
       deadline,
     });
 

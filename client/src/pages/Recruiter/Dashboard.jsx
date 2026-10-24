@@ -5,8 +5,29 @@ function RecruiterDashboard() {
   const [user, setUser] = useState(null);
   const [jobs, setJobs] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [ application,setApplications]= useState([]);
 
   const navigate = useNavigate();
+
+
+  useEffect(()=>{
+    const fetchApplications=async()=>{
+      try{
+        const token=localStorage.getItem("token");
+        const response= await fetch("http://localhost:5000/api/applications/job/:jobId",
+          {
+            headers:{
+              Authorization:`Bearer ${token}`,
+            }
+          }
+        )
+      }catch(error){
+
+      }
+
+    }
+    fetchApplications();
+  },[])
 
   useEffect(() => {
     const fetchDashboard = async () => {
@@ -102,6 +123,15 @@ function RecruiterDashboard() {
           </button>
 
           <button
+          onClick={()=> navigate("/recruiter/createjob")}
+           className="w-full rounded-lg px-4 py-3 text-left text-slate-400 hover:bg-slate-800 hover:text-white"
+          >
+            Post Jobs
+
+          </button>
+
+          <button
+          onClick={()=>navigate("/recruiter/my")}
             className="w-full rounded-lg px-4 py-3 text-left text-slate-400 hover:bg-slate-800 hover:text-white"
           >
             Profile

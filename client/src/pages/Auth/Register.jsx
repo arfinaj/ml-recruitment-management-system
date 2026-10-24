@@ -1,6 +1,9 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Register() {
+
+  const navigate=useNavigate();
 
     const [formData,setFormData]=useState({
         fullName: "",
@@ -34,7 +37,14 @@ function Register() {
 
             const data= await response.json();
             console.log(data);
-            
+          
+            if(data.user.role==="Student"){
+              navigate("/student/dashboard");
+            }else if(data.user.role==="Recruiter"){
+              navigate("/recruiter/dashboard");
+            }else if(data.user.role==="TPO"){
+              navigate("/tpo/dashboard");
+            }
             
         }
         catch(error){

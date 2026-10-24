@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 function StudentDashboard() {
@@ -8,12 +9,14 @@ function StudentDashboard() {
   const [jobs,setJobs]=useState([]);
   const [applications,setApplications]=useState([]);
 
+  const navigate=useNavigate();
+
 
   useEffect(()=>{
     const fetchApplications= async()=>{
       try{
         const token=localStorage.getItem("token");
-        const response=await fetch("http://localhost:5000/api/job/job:Id/my-applications",{
+        const response=await fetch("http://localhost:5000/api/applications/my-applications",{
           headers:{
             Authorization: `Bearer ${token}`,
           },
@@ -21,7 +24,7 @@ function StudentDashboard() {
            )
           const data= await response.json();
 
-          if(!response.ok()){
+          if(!response.ok){
             console.log(data.message);
             return
           }
@@ -33,6 +36,7 @@ function StudentDashboard() {
         }
      
       }
+      fetchApplications();
     },[]);
     
 
@@ -56,7 +60,7 @@ function StudentDashboard() {
           console.error(data.message)
         }
         setJobs(data.jobs)
-        console.log("Fetched jobs:", data.jobs);
+
       }catch(error){
         console.error("Jobs fetch error:", error);
       }
@@ -118,15 +122,27 @@ function StudentDashboard() {
             Dashboard
           </button>
 
-          <button className="w-full rounded-lg px-4 py-3 text-left text-slate-400 hover:bg-slate-800 hover:text-white">
+          <button 
+          onClick={()=>{navigate("/student/jobs")}}
+          className="w-full rounded-lg px-4 py-3 text-left text-slate-400 hover:bg-slate-800 hover:text-white">
             Jobs
           </button>
 
-          <button className="w-full rounded-lg px-4 py-3 text-left text-slate-400 hover:bg-slate-800 hover:text-white">
+          <button
+          onClick={()=>{navigate("/student/my-applications")}}
+           className="w-full rounded-lg px-4 py-3 text-left text-slate-400 hover:bg-slate-800 hover:text-white">
             Applications
           </button>
+          <button
+  onClick={() => navigate("/student/analyze-resume")}
+  className="w-full rounded-lg px-4 py-3 text-left text-slate-400 hover:bg-slate-800 hover:text-white"
+>
+  Analyze Your Resume
+</button>
 
-          <button className="w-full rounded-lg px-4 py-3 text-left text-slate-400 hover:bg-slate-800 hover:text-white">
+          <button 
+          onClick={()=>navigate("/student/me")}
+          className="w-full rounded-lg px-4 py-3 text-left text-slate-400 hover:bg-slate-800 hover:text-white">
             Profile
           </button>
 

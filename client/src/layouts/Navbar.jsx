@@ -4,7 +4,7 @@ function Navbar() {
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-8">
 
         <h1 className="text-2xl font-bold text-white">
-          Place<span className="text-violet-500">Sync</span>
+          Place<span className="text-blue-500">Sync</span>
         </h1>
 
         <div className="hidden gap-10 text-gray-300 md:flex">
@@ -15,7 +15,7 @@ function Navbar() {
         </div>
 
         <button
-          className="rounded-xl bg-violet-600 px-6 py-3 font-semibold text-white transition hover:bg-violet-500"
+          className="rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-violet-500"
         >
           Login
         </button>
