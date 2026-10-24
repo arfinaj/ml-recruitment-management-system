@@ -1,7 +1,19 @@
 <h2>Engineering smarter recruitment through full-stack architecture, machine learning, and unified hiring workflows.</h2>
+
 The platform streamlines the placement process by connecting students, recruiters, and Training and Placement Officers (TPOs) through a centralized system for job postings, applications, and placement activities.
 
-Key Features
+<h3>Why This Project?</h3>
+
+<h4>Who is it for?</h4>
+Students navigating campus recruitment, recruiters managing candidate pipelines, and placement officers orchestrating hiring across departments.
+
+<h4>What problem does it solve?</h4>
+Consolidates fragmented recruitment workflows into a unified system with cross-portal data synchronization, centralized application tracking, and ML-based resume–job relevance classification.
+
+<h4>Why does it matter?</h4>
+Reduces administrative overhead, accelerates candidate discovery, and enables data-driven recruitment decisions through structured candidate pipelines and consolidated placement insights.
+
+<h3>Key Features</h3>
 
 Role-Based Portals: Dedicated interfaces for students, recruiters, and placement officers.
 
