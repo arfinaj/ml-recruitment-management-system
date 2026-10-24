@@ -4,13 +4,13 @@ The platform streamlines the placement process by connecting students, recruiter
 
 <h3>Why This Project?</h3>
 
-<h4>Who is it for?</h4>
+<em><h4>Who is it for?</h4></em>
 Students navigating campus recruitment, recruiters managing candidate pipelines, and placement officers orchestrating hiring across departments.
 
-<h4>What problem does it solve?</h4>
+<em><h4>What problem does it solve?</h4></em>
 Consolidates fragmented recruitment workflows into a unified system with cross-portal data synchronization, centralized application tracking, and ML-based resume–job relevance classification.
 
-<h4>Why does it matter?</h4>
+<em><h4>Why does it matter?</h4></em>
 Reduces administrative overhead, accelerates candidate discovery, and enables data-driven recruitment decisions through structured candidate pipelines and consolidated placement insights.
 
 <h3>Key Features</h3>
